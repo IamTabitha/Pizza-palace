@@ -55,7 +55,7 @@ function getUserOrder() {
     let pizzaPrice = pizzaSizePrice + pizzaCrustPrice + pizzaToppingPrice;
     let totalBill = 0;
     totalBill = pizzaPrice + totalBill;
-    document.getElementById("kuku").textContent = "Your total Bill is Ksh." +  totalBill;
+    //document.getElementById("kuku").textContent = "Your total Bill is Ksh." +  totalBill;
 
     document.getElementById("pType").textContent = pizzaType;
     document.getElementById("pSize").textContent = pizzaSize;
@@ -146,7 +146,7 @@ function addPizza() {
     cell4.textContent = pizzaTopping;
     cell5.textContent = pizzaPrice;
 
-    document.getElementById("kuku").textContent = "Your total Bill is Ksh." +  nowTotal;
+    //document.getElementById("kuku").textContent = "Your total Bill is Ksh." +  nowTotal;
     
 
     

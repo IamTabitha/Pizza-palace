@@ -1,14 +1,20 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(156, 145, 145);
+    margin: 0;
+    background-color: orange;
 } 
 #description{
     /* border: 3px solid black; */
-    color: bisque;
+    color: orange;
     text-align: right;
     position: relative;
 }
 #description > img {
-    width: 1325px;  
+    width: 1351px; 
+    height: 605px; 
+
 }
 #description > h1 {
     font-size: 64px;
@@ -23,19 +29,89 @@ body{
     right: 190px;
     font-style: italic;
 }
+.row{
+    position: relative;
+}
+#orderSection{
+    
+    padding: 10px;
+    height: 500px;
+}
+#formOrder{
+    
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+}
+select {
+    height: 50px;
+    padding: 10px;
+    width: 250px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+label {
+    font-size: 20px;
+}
+button{
+    height: 40px;
+    border-radius: 5px;
+    color: black;
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    color: white;
+}
+
 #addButton{
     display: none;
 }
 #checkoutButton{
     display: none;
 }
-table {
-    margin-top:10px;
-    margin-bottom:10px;
-    display: none;
+#orderTableDiv{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    height: 400px;
+    background-color: white;
+    /* border: 3px solid pink; */
 }
-table td{
-    border: 2px solid black;
+table {
+    margin-bottom:10px;
+    width: 606px;
+    display: none;
+    background-color: white;
+    border-collapse: collapse;
+    
+}
+thead{
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    
+}
+tbody > td {
+    font-size: 18px;
+}
+td{
+    border: 2px solid gray;
     padding: 10px;
+    
+}
+/* #checkoutButton{
+    background-color: white !important;
+}
+#checkoutButton:hover{
+    color: orange;
+    background-color: black !important;
+} */
+#lastPart{
+    position: absolute;
+    top: 250px;
+    right: 400px;
     
 }
