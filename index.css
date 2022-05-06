@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(156, 145, 145);
+} 
+#description{
+    /* border: 3px solid black; */
+    color: bisque;
+    text-align: right;
+    position: relative;
+}
+#description > img {
+    width: 1325px;  
+}
+#description > h1 {
+    font-size: 64px;
+    position: absolute;
+    top: 115px;
+    right: 110px;
+}
+#description > p {
+
+    position: absolute;
+    top: 225px;
+    right: 190px;
+    font-style: italic;
+}
+#addButton{
+    display: none;
+}
+#checkoutButton{
+    display: none;
+}
+table {
+    margin-top:10px;
+    margin-bottom:10px;
+    display: none;
+}
+table td{
+    border: 2px solid black;
+    padding: 10px;
+    
+}

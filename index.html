@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Pizza Palace</title>
+    </head>
+    <body>
+        <div id="description">
+            <h1>Pizza Palace</h1>
+            <p>The place for all your pizza cravings</p>
+            <img src="images/wallpaper.jpg" alt="">
+        </div>
+        <div>
+            <form method="POST">
+                <label for="pizzaOrder">Select pizza type below:</label><br>
+                <select id="userPizzaType">
+                    <option value="none">--Select an option--</option>
+                    <option value="chickenTerriyaki">chickenTerriyaki</option>
+                    <option value="mushroomPizza">mushroomPizza</option>
+                    <option value="hawaianPizza">hawaianPizza</option>
+                </select>
+                <select id="userPizzaSize">
+                    <option value="none">--Select an option--</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <select id="userCrustType">
+                    <option value="none">--Select an option--</option>
+                    <option value="crispy">Crispy</option>
+                    <option value="stuffed">Stuffed</option>
+                    <option value="gluten-free">Gluten-free</option>
+                </select>
+                <br><br>
+                <label for="userToppings">Select Toppings below:</label><br>
+                <select id="userToppingsAdded">
+                    <option value="none">--Select an option--</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushroom">Mushroom</option>
+                </select>
+                <br><br>
+                <button onclick="getUserOrder()" type="submit" id="orderButton">Order Pizza</button>
+                <button onclick="addPizza()" type="submit" id="addButton">Add another Pizza</button>
+                <table id="orderTable">
+                    <thead>
+                        <tr>
+                            <td>Pizza Type</td>
+                            <td>Pizza Size</td>
+                            <td>Pizza Crust</td>
+                            <td>Pizza Topping</td>
+                            <td>Total (Ksh.)</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="pType"></td>
+                            <td id="pSize"></td>
+                            <td id="pCrust"></td>
+                            <td id="pTopping"></td>
+                            <td id="pPrice"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="kuku"></p>
+                <button onclick="getBill()" type="submit" id="checkoutButton">Checkout</button>
+            </form>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
